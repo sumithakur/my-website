@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Snapshot — Sumit Thakur (Print)</title>
+
+  <!-- Tailwind CDN (used for screen view; print CSS below handles PDF) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --brand-600:#0B3D91;
+      --brand-100:#EAF2FF;
+      --muted:#6B7280;
+    }
+    html,body{height:100%;margin:0;padding:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;color:#111827;}
+    /* Page container for nice margins when printed */
+    .page {
+      width:210mm;          /* A4 width */
+      min-height:297mm;     /* A4 height */
+      margin:8mm auto;
+      padding:18mm;
+      box-sizing:border-box;
+      background:white;
+    }
+
+    /* Visual styles */
+    .title { color:var(--brand-600); font-size:24px; font-weight:700; margin:0 0 6px 0; }
+    .subtitle { color:#374151; font-size:12.5px; margin:0 0 12px 0; }
+    .section-title { color:var(--brand-600); font-size:14px; font-weight:700; margin:10px 0 6px; }
+    .body { font-size:11.5px; color:#111827; line-height:1.45; margin:6px 0; }
+    .card { padding:10px 12px; border-radius:8px; border:1px solid rgba(11,61,145,0.06); box-shadow: 0 8px 20px rgba(11,61,145,0.04); background:#fff; }
+
+    /* two-column layout for main content */
+    .grid {
+      display:grid;
+      grid-template-columns: 2fr 1fr;
+      grid-column-gap:18px;
+      align-items:start;
+    }
+
+    /* small responsive fallback */
+    @media (max-width:900px){
+      .page{width:100%;min-height:unset;padding:18px;}
+      .grid{grid-template-columns:1fr;}
+    }
+
+    /* Print-specific CSS */
+    @media print {
+      @page { size: A4; margin: 8mm; }
+      body{background:white;}
+      .page { box-shadow:none; margin:0; width:auto; min-height:auto; padding:8mm; }
+      /* Force fonts to be embedded by browser print */
+      .no-print { display:none !important; }
+      a::after { content: " (" attr(href) ")"; font-size:9px; color:#666; display:inline-block; margin-left:4px; }
+    }
+
+    /* header */
+    .header-flex { display:flex; justify-content:space-between; align-items:flex-start; gap:12px; }
+    .brand { display:flex; gap:12px; align-items:center; }
+    .logo-box { width:44px;height:44px;border-radius:8px;background:rgba(11,61,145,0.06);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--brand-600); }
+    .contact { text-align:right; font-size:11px; color:#374151; }
+
+    footer { font-size:10.5px; color:#6B7280; margin-top:18px; text-align:center; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="header-flex" style="margin-bottom:6px;">
+      <div class="brand">
+        <div class="logo-box">ST</div>
+        <div>
+          <div class="title">SUMIT THAKUR</div>
+          <div class="subtitle">Innovation & Partnerships — Startup ecosystems, corporate labs, venture platforms</div>
+        </div>
+      </div>
+      <div class="contact">
+        Bengaluru, India<br>
+        sumitkthakur.netlify.app<br>
+        bksumit.thakur@gmail.com
+      </div>
+    </header>
+
+    <p class="body" style="margin-bottom:10px;">
+      A concise executive snapshot of work across corporate innovation, venture ecosystems, and founder support — complemented by technical fluency in AI-enabled tools and rapid prototyping. Designed for VCs, corporate innovation teams, and founders who want a single-page view of strategic capability and proof of execution.
+    </p>
+
+    <div class="grid" style="margin-top:10px;">
+      <!-- left column -->
+      <div>
+        <div class="card" style="margin-bottom:12px;">
+          <div class="section-title">Innovation Leadership (JLL)</div>
+          <div class="body">Built and led a corporate startup innovation program, creating structured engagement pathways between founders and enterprise teams. Guided founders on product readiness, enterprise adoption, pricing strategies, and regulatory alignment. Collaborated with product and engineering teams to review integration feasibility and roadmap alignment.</div>
+        </div>
+
+        <div class="card" style="margin-bottom:12px;">
+          <div class="section-title">Venture & Accelerator Partnerships</div>
+          <div class="body">Managed VC and accelerator relationships across India, Europe, and APAC to strengthen founder engagement. Designed founder engagement programs and co-marketing initiatives. Supported portfolio founders with investor introductions, pitch preparation, and market expansion guidance.</div>
+        </div>
+
+        <div class="card" style="margin-bottom:12px;">
+          <div class="section-title">Startup Ecosystem Builder</div>
+          <div class="body">Advised startups across India and Europe on GTM strategy, partnerships, and cross-border expansion. Built networks with accelerators, corporates, and investors to create deal and pilot opportunities. Operated as the connector between founders, investors, and enterprise stakeholders.</div>
+        </div>
+
+        <div class="card" style="margin-bottom:6px;">
+          <div class="section-title">Founder Experience (Untapd)</div>
+          <div class="body">Founded a mobility startup focused on connected-car solutions and device-to-cloud integrations. Developed patent-pending offline communication technology and led product strategy, GTM, and international expansion efforts.</div>
+        </div>
+      </div>
+
+      <!-- right column -->
+      <aside>
+        <div class="card" style="margin-bottom:12px;">
+          <div class="section-title">Technical Fluency (Differentiator)</div>
+          <div class="body">Use lightweight AI agents, scrapers, and automations to accelerate market mapping and due diligence. Perform rapid prototyping to test feasibility and integration assumptions. Translate engineering constraints into commercial decisions and align stakeholders for quicker execution.</div>
+        </div>
+
+        <div class="card" style="margin-bottom:12px;">
+          <div class="section-title">Proof & Deliverables</div>
+          <div class="body">
+            • One-pager PDF (available for download)<br>
+            • Portfolio: <a href="https://sumitkthakur.netlify.app">sumitkthakur.netlify.app</a><br>
+            • LinkedIn: <a href="https://linkedin.com/in/sumitkthakur">linkedin.com/in/sumitkthakur</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom:12px;">
+          <div class="section-title">Quick Contact</div>
+          <div class="body">Email: <a href="mailto:bksumit.thakur@gmail.com">bksumit.thakur@gmail.com</a><br>Phone: +91 85099 31517</div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      Available for advisory and portfolio support · © 2025 Sumit Thakur
+    </footer>
+  </div>
+</body>
+</html>
