@@ -6,23 +6,11 @@
     <title>Sumit Thakur | Strategic Partner Manager</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- 
-    Chosen Palette: Professional Blue & Clean White
-    Application Structure Plan: A classic "Landing Page" structure.
-    - Hero: Photo + Headline + CTA.
-    - Stats Bar: Immediate proof of value ($1M, etc).
-    - About: Brief summary.
-    - Experience: Vertical list (Timeline style).
-    - Skills: Tag cloud.
-    - Education: Simple grid.
-    - Footer: Contact.
-    CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. NO Complex Charts.
-    -->
     <style>
         body {
             font-family: 'Inter', sans-serif;
             background-color: #ffffff;
-            color: #1f2937; /* Gray-900 */
+            color: #1f2937;
         }
         .gradient-text {
             background: linear-gradient(to right, #1d4ed8, #3b82f6);
@@ -43,14 +31,18 @@
     <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50 border-b border-gray-100">
         <div class="max-w-5xl mx-auto px-6 h-16 flex justify-between items-center">
             <div class="font-bold text-xl tracking-tight text-gray-900">Sumit Thakur</div>
-            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
-                <a href="#about" class="hover:text-blue-600 transition-colors">About</a>
+
+            <!-- Updated nav: includes Snapshot page -->
+            <div class="hidden md:flex space-x-6 text-sm font-medium text-gray-600">
+                <a href="/" class="hover:text-blue-600 transition-colors">Home</a>
+                <a href="/snapshot.html" class="hover:text-blue-600 transition-colors">Snapshot</a>
                 <a href="#experience" class="hover:text-blue-600 transition-colors">Experience</a>
                 <a href="#skills" class="hover:text-blue-600 transition-colors">Skills</a>
                 <a href="#education" class="hover:text-blue-600 transition-colors">Education</a>
             </div>
-            <a href="https://www.linkedin.com/in/sumitkthakur" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors shadow-md">
-                Contact Me
+
+            <a href="/snapshot.html" target="_self" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors shadow-md">
+                Snapshot
             </a>
         </div>
     </nav>
@@ -66,9 +58,8 @@
                          alt="Sumit Thakur" 
                          class="rounded-xl shadow-xl w-64 h-auto object-cover border border-gray-200"
                          onerror="this.style.display='none'; document.getElementById('img-placeholder').style.display='flex';">
-                    <!-- Fallback placeholder if image is missing from folder -->
                     <div id="img-placeholder" class="hidden rounded-xl shadow-xl w-64 h-80 bg-gray-200 flex items-center justify-center text-center p-4 text-gray-500 text-sm">
-                        Image not found.<br>Ensure 'skt' is in the same folder.
+                        Image not found.<br>Ensure 'assets/skt.jpeg' is uploaded.
                     </div>
                 </div>
             </div>
@@ -76,14 +67,14 @@
             <!-- Intro Text -->
             <div class="w-full md:w-2/3 text-center md:text-left">
                 <div class="inline-block px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-bold tracking-wide uppercase mb-4">
-                    Bengaluru | Open to Relocation (Gurugram, UK, Europe)
+                    Bengaluru
                 </div>
                 <h1 class="text-4xl md:text-5xl font-bold leading-tight text-gray-900 mb-4">
                     Strategic Partner Manager & <br>
                     <span class="gradient-text">Tech Strategy Leader</span>
                 </h1>
                 <p class="text-lg text-gray-600 leading-relaxed mb-8 max-w-2xl mx-auto md:mx-0">
-                    Strategic leader with 8+ years of experience spanning entrepreneurial ventures, SaaS partnerships, and corporate innovation. Proven track record of building 0-to-1 ecosystems, having founded a NITI Aayog-recognized mobility startup and currently leading JLL’s innovation arm. Blends deep go-to-market (GTM) expertise with technical fluency in Cloud/IoT architectures. Adept at bridging the gap between complex engineering solutions and enterprise business value.
+                    Strategic leader with 8+ years of experience across entrepreneurial ventures, SaaS partnerships, and corporate innovation. Built 0-to-1 ecosystems, led corporate accelerator work, and blend GTM expertise with technical fluency to bridge engineering and enterprise value.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                     <a href="#experience" class="px-6 py-3 bg-gray-900 text-white rounded-lg font-medium hover:bg-gray-800 transition-shadow shadow-lg">
@@ -97,20 +88,20 @@
         </div>
     </section>
 
-    <!-- KEY METRICS -->
+    <!-- KEY METRICS (Non-numeric; qualitative) -->
     <section class="bg-blue-600 py-12 text-white">
         <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-blue-500">
             <div class="px-4 py-2">
-                <div class="text-4xl font-bold mb-1">$1M+</div>
-                <div class="text-blue-100 text-sm font-medium uppercase tracking-wide">Annualized Sales (JLL)</div>
+                <div class="text-2xl font-bold mb-1">Enterprise pathways</div>
+                <div class="text-blue-100 text-sm font-medium uppercase tracking-wide">Commercialising startups into enterprises</div>
             </div>
             <div class="px-4 py-2">
-                <div class="text-4xl font-bold mb-1">50+</div>
-                <div class="text-blue-100 text-sm font-medium uppercase tracking-wide">Startups Onboarded</div>
+                <div class="text-2xl font-bold mb-1">Ecosystem activation</div>
+                <div class="text-blue-100 text-sm font-medium uppercase tracking-wide">Curating founder & investor connections</div>
             </div>
             <div class="px-4 py-2">
-                <div class="text-4xl font-bold mb-1">$6M</div>
-                <div class="text-blue-100 text-sm font-medium uppercase tracking-wide">Funding Facilitated</div>
+                <div class="text-2xl font-bold mb-1">Startup validation</div>
+                <div class="text-blue-100 text-sm font-medium uppercase tracking-wide">Pilots, technical evaluation, and scaling readiness</div>
             </div>
         </div>
     </section>
@@ -132,9 +123,9 @@
                 <div class="text-blue-600 font-medium mb-3">JLL • Bengaluru, India</div>
                 <p class="text-gray-600 mb-4 italic">Leading innovation strategy and startup partnerships for JLL’s enterprise clients.</p>
                 <ul class="list-disc list-inside space-y-2 text-gray-700 text-sm leading-relaxed">
-                    <li>Spearheaded scouting/onboarding of <b>20+ PropTech startups</b>, launching 20+ pilots.</li>
-                    <li>Generated over <b>~$1M in annualized sales</b> </li>
-                    <li>Orchestrated digital transformation for <b>enterprise accounts</b>.</li>
+                    <li>Built JLL’s startup innovation program and led partnerships across the India ecosystem.</li>
+                    <li>Guided founders on product readiness, enterprise adoption, pricing, and regulatory considerations.</li>
+                    <li>Coordinated with product and engineering teams to ensure integration readiness.</li>
                 </ul>
             </div>
 
@@ -147,7 +138,7 @@
                 <div class="text-blue-600 font-medium mb-3">Blackmont Consulting • Glasgow, UK</div>
                 <ul class="list-disc list-inside space-y-2 text-gray-700 text-sm leading-relaxed">
                     <li>Delivered strategic growth frameworks and identified process bottlenecks.</li>
-                    <li>Conducted deep-dive competitive analysis for post-Brexit market opportunities.</li>
+                    <li>Conducted competitive analysis on post-Brexit market dynamics.</li>
                 </ul>
             </div>
 
@@ -159,8 +150,8 @@
                 </div>
                 <div class="text-blue-600 font-medium mb-3">Moonraft Innovation Labs • Bengaluru, India</div>
                 <ul class="list-disc list-inside space-y-2 text-gray-700 text-sm leading-relaxed">
-                    <li>Executed GTM strategies increasing regional revenue by <b>20%</b>.</li>
-                    <li>Strengthened partner collaborations across Singapore and Indonesia.</li>
+                    <li>Led regional GTM initiatives and strengthened partner collaborations across SEA markets.</li>
+                    <li>Improved partner delivery frameworks and cross-functional alignment.</li>
                 </ul>
             </div>
 
@@ -172,8 +163,8 @@
                 </div>
                 <div class="text-blue-600 font-medium mb-3">Chargebee Inc • Chennai/Remote</div>
                 <ul class="list-disc list-inside space-y-2 text-gray-700 text-sm leading-relaxed">
-                    <li>Drove <b>15% revenue increase</b> via VC/Accelerator partnerships.</li>
-                    <li>Secured <b>500+ new customers</b> through co-marketing campaigns.</li>
+                    <li>Managed VC and accelerator partnerships across multiple regions to strengthen ecosystem presence.</li>
+                    <li>Built founder engagement and co-marketing programs with strategic partners.</li>
                 </ul>
             </div>
 
@@ -185,8 +176,8 @@
                 </div>
                 <div class="text-blue-600 font-medium mb-3">Mainstage Hub UG • Frankfurt, Germany</div>
                 <ul class="list-disc list-inside space-y-2 text-gray-700 text-sm leading-relaxed">
-                    <li>Facilitated <b>$6M in funding</b> for 10 portfolio startups.</li>
-                    <li>Boosted global sales leads by <b>30%</b> via CITI/Atlassian alliances.</li>
+                    <li>Oversaw investor and accelerator relationships within the European startup ecosystem.</li>
+                    <li>Built strategic partnerships to increase visibility and opportunity flow for founders.</li>
                 </ul>
             </div>
 
@@ -199,8 +190,8 @@
                 <div class="text-blue-600 font-medium mb-3">Untap'd • India / Germany</div>
                 <p class="text-gray-600 mb-2 italic text-sm">Recognized by NITI Aayog (Top 30 Mobility Startups).</p>
                 <ul class="list-disc list-inside space-y-2 text-gray-700 text-sm leading-relaxed">
-                    <li>Built IoT connected car platform; led architecture & API integrations.</li>
-                    <li>Secured patent-pending status and pilots with <b>Volkswagen</b>.</li>
+                    <li>Built an IoT connected car platform and led architecture & API integration efforts.</li>
+                    <li>Secured patent-pending status and managed pilot collaborations with automotive partners.</li>
                 </ul>
             </div>
         </div>
