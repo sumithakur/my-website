@@ -3,40 +3,34 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Innovation & Partnerships Snapshot — Sumit Thakur</title>
+  <title>Snapshot — Sumit Thakur</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root{
-      --brand-600: #0B3D91;
-      --brand-100: #EAF2FF;
-      --muted: #6B7280;
+      --brand-600:#0B3D91;
+      --brand-100:#EAF2FF;
     }
-    body { font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:#ffffff; color:#111827; }
-    .glass { background: rgba(255,255,255,0.86); backdrop-filter: blur(6px); }
-    .accent { color: var(--brand-600); }
-    .card { border-radius: 12px; background: #fff; box-shadow: 0 8px 30px rgba(11,61,145,0.06); border:1px solid rgba(11,61,145,0.06); }
-    .tag { background: var(--brand-100); color: var(--brand-600); padding:6px 10px; border-radius:999px; font-weight:600; font-size:13px; }
-    /* responsive adjustments */
-    @media (max-width:768px){
-      .desktop-only{ display:none; }
-      .mobile-only{ display:block; }
-    }
-    @media (min-width:769px){
-      .mobile-only{ display:none; }
-    }
+    body{ font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:#fff; color:#111827; }
+    .glass{ background: rgba(255,255,255,0.86); backdrop-filter: blur(6px); }
+    .card{ border-radius:12px; background:#fff; box-shadow:0 8px 30px rgba(11,61,145,0.06); border:1px solid rgba(11,61,145,0.06); }
+    .tag{ background:var(--brand-100); color:var(--brand-600); padding:6px 10px; border-radius:999px; font-weight:600; font-size:13px; }
+    .accent{ color:var(--brand-600); }
+    .muted{ color:#6B7280; }
+    @media (max-width:768px){ .desktop-only{ display:none; } .mobile-only{ display:block; } }
+    @media (min-width:769px){ .mobile-only{ display:none; } }
   </style>
 </head>
 <body>
 
-  <!-- NAV (light) -->
+  <!-- NAV -->
   <nav class="fixed w-full z-40 glass border-b border-gray-100">
     <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
       <a href="/" class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-lg flex items-center justify-center bg-[rgba(11,61,145,0.08)]">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 12h18" stroke="#0B3D91" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <div class="w-9 h-9 rounded-lg flex items-center justify-center bg-[rgba(11,61,145,0.06)]">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 12h18" stroke="#0B3D91" stroke-width="1.5" stroke-linecap="round"/></svg>
         </div>
         <div class="font-semibold text-gray-900">Sumit Thakur</div>
       </a>
@@ -44,23 +38,22 @@
       <div class="hidden md:flex items-center gap-6 text-sm">
         <a href="/" class="text-gray-600 hover:text-[var(--brand-600)]">Home</a>
         <a href="/snapshot.html" class="text-[var(--brand-600)] font-semibold">Snapshot</a>
-        <a href="#contact" class="text-gray-600 hover:text-[var(--brand-600)]">Contact</a>
-        <a href="https://www.linkedin.com/in/sumitkthakur" target="_blank" class="px-3 py-2 bg-[var(--brand-600)] text-white rounded-lg shadow-sm">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/sumitkthakur" target="_blank" rel="noopener" class="px-3 py-2 bg-[var(--brand-600)] text-white rounded-lg shadow-sm">LinkedIn</a>
       </div>
 
       <a href="/snapshot.html" class="md:hidden px-3 py-2 bg-[var(--brand-600)] text-white rounded-lg">Snapshot</a>
     </div>
   </nav>
 
-  <main class="pt-20 pb-24">
+  <main class="pt-24 pb-20">
     <div class="max-w-6xl mx-auto px-6">
 
-      <!-- Header / hero -->
-      <header class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start mb-10">
+      <!-- HERO -->
+      <header class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start mb-8">
         <div class="md:col-span-2">
           <div class="flex items-center gap-4 mb-3">
             <div class="tag">Innovation & Partnerships</div>
-            <div class="text-sm text-muted">Snapshot</div>
+            <div class="text-sm muted">Snapshot</div>
           </div>
 
           <h1 class="text-3xl md:text-4xl font-bold leading-tight">
@@ -68,97 +61,79 @@
           </h1>
 
           <p class="mt-4 text-gray-700 max-w-3xl">
-            Strategic partner leader working across startups, venture platforms, and corporate innovation labs. I combine deep ecosystem knowledge with technical fluency — using lightweight AI tools and rapid prototyping to accelerate validation and align product with commercial outcomes.
+            Strategic partner leader working across startups, venture platforms, and corporate innovation labs. I combine ecosystem expertise with technical fluency — using lightweight AI tools and rapid prototyping to accelerate validation and align product with commercial outcomes.
           </p>
 
           <div class="mt-6 flex flex-wrap gap-3">
-            <a href="/assets/Sumit_Innovation_Partnerships_Snapshot_Polished.pdf" download class="px-4 py-2 bg-[var(--brand-600)] text-white rounded-lg shadow hover:bg-[#072a6b]">Download one-pager (PDF)</a>
+            <a id="downloadBtn" href="/Sumit_Snapshot_Styled.pdf" download target="_blank" rel="noopener" class="px-4 py-2 bg-[var(--brand-600)] text-white rounded-lg shadow hover:bg-[#072a6b]">Download one-pager (PDF)</a>
+            <a id="viewBtn" href="/Sumit_Snapshot_Styled.pdf" target="_blank" rel="noopener" class="px-4 py-2 border border-gray-200 rounded-lg text-gray-700 hover:bg-gray-50">Open in new tab</a>
             <a href="mailto:bksumit.thakur@gmail.com" class="px-4 py-2 border border-gray-200 rounded-lg text-gray-700 hover:bg-gray-50">Email Sumit</a>
-            <a href="https://sumitkthakur.netlify.app" target="_blank" class="px-4 py-2 border border-gray-200 rounded-lg text-gray-700 hover:bg-gray-50">View portfolio</a>
+            <span id="pdfStatus" class="ml-2 text-sm text-red-600" style="display:none;">PDF not found — trying fallback...</span>
           </div>
         </div>
 
-        <!-- visual card -->
         <aside class="card p-5 md:p-6">
           <div class="flex items-start gap-4">
-            <div class="w-16 h-16 rounded-lg bg-[rgba(11,61,145,0.06)] flex items-center justify-center">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 3v18" stroke="#0B3D91" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <div class="w-14 h-14 rounded-lg bg-[rgba(11,61,145,0.06)] flex items-center justify-center">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3v18" stroke="#0B3D91" stroke-width="1.5" stroke-linecap="round"/></svg>
             </div>
             <div>
-              <div class="text-sm text-gray-500">Location</div>
+              <div class="text-sm muted">Location</div>
               <div class="font-semibold">Bengaluru, India</div>
             </div>
           </div>
 
           <div class="mt-5 border-t pt-4">
-            <div class="text-sm text-gray-500">Role</div>
+            <div class="text-sm muted">Role</div>
             <div class="font-semibold">Innovation & Partnerships Leader</div>
 
-            <div class="mt-4 text-sm text-gray-500">Availability</div>
+            <div class="mt-4 text-sm muted">Availability</div>
             <div class="font-medium text-gray-700">Advisory & Portfolio Support</div>
           </div>
         </aside>
       </header>
 
-      <!-- core grid -->
+      <!-- CORE GRID -->
       <section class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <!-- left column -->
         <div class="lg:col-span-2 space-y-6">
-
-          <!-- Innovation Leadership -->
           <article class="card p-6">
             <h3 class="text-lg font-semibold accent">Innovation Leadership (JLL)</h3>
             <p class="mt-3 text-gray-700">Built and led a corporate startup innovation program, creating structured engagement pathways between founders and enterprise teams. Guided founders on product readiness, enterprise adoption, pricing strategies, and regulatory alignment while collaborating with product and engineering teams to review integration feasibility and roadmap alignment.</p>
           </article>
 
-          <!-- Venture & Accelerator Partnerships -->
           <article class="card p-6">
             <h3 class="text-lg font-semibold accent">Venture & Accelerator Partnerships</h3>
-            <p class="mt-3 text-gray-700">Managed VC and accelerator relationships across Europe, India, and APAC to strengthen founder engagement. Designed founder programs and co-marketing initiatives and supported portfolio founders with investor introductions, pitch preparation, and market expansion guidance.</p>
+            <p class="mt-3 text-gray-700">Managed VC and accelerator relationships across India, Europe, and APAC to strengthen founder engagement. Designed founder programs and co-marketing initiatives; supported portfolio founders with investor introductions, pitch preparation, and market expansion guidance.</p>
           </article>
 
-          <!-- Startup Ecosystem Builder -->
           <article class="card p-6">
             <h3 class="text-lg font-semibold accent">Startup Ecosystem Builder</h3>
-            <p class="mt-3 text-gray-700">Advised startups across India and Europe on GTM strategy, partnerships, and cross-border expansion. Built networks with accelerators, corporates, and investors to create deal and pilot opportunities — operating as the connector between founders, investors, and corporate stakeholders.</p>
+            <p class="mt-3 text-gray-700">Advised startups across India and Europe on GTM strategy, partnerships, and cross-border expansion. Built networks with accelerators, corporates, and investors to create deal and pilot opportunities.</p>
           </article>
 
-          <!-- Founder Experience -->
           <article class="card p-6">
             <h3 class="text-lg font-semibold accent">Founder Experience (Untapd)</h3>
-            <p class="mt-3 text-gray-700">Founded a mobility startup focused on connected-car solutions and device-to-cloud integrations. Led product strategy and technical decisions while coordinating pilots with automotive partners and managing fundraising, strategic partnerships, and expansion across India and Germany.</p>
+            <p class="mt-3 text-gray-700">Founded a mobility startup focused on connected-car solutions and device-to-cloud integrations. Led product strategy, technical decisions and coordinated pilots with automotive partners.</p>
           </article>
-
         </div>
 
-        <!-- right column (technical differentiator + CTA) -->
         <aside class="space-y-6">
-
           <div class="card p-6">
             <h4 class="text-md font-semibold">Technical Fluency — My Differentiator</h4>
-            <p class="mt-3 text-gray-700">I use lightweight AI agents, scrapers, and automations to accelerate market mapping and due diligence. I perform technical due diligence and rapid prototyping to validate product and integration assumptions, and I translate engineering constraints into commercial decisions for faster execution.</p>
-            <div class="mt-4 grid gap-2">
-              <div class="flex items-center gap-3 text-sm">
-                <div class="w-2 h-2 rounded-full bg-[var(--brand-600)]"></div>
-                <div>AI Agents & Automation</div>
-              </div>
-              <div class="flex items-center gap-3 text-sm">
-                <div class="w-2 h-2 rounded-full bg-[var(--brand-600)]"></div>
-                <div>Technical Due Diligence</div>
-              </div>
-              <div class="flex items-center gap-3 text-sm">
-                <div class="w-2 h-2 rounded-full bg-[var(--brand-600)]"></div>
-                <div>Rapid Prototyping</div>
-              </div>
+            <p class="mt-3 text-gray-700">I use lightweight AI agents, scrapers, and automations to accelerate market mapping and due diligence. I perform technical due diligence and rapid prototyping to validate product and integration assumptions, and translate engineering constraints into commercial decisions for faster execution.</p>
+            <div class="mt-4 grid gap-2 text-sm">
+              <div class="flex items-center gap-3"><div class="w-2 h-2 rounded-full bg-[var(--brand-600)]"></div><div>AI Agents & Automation</div></div>
+              <div class="flex items-center gap-3"><div class="w-2 h-2 rounded-full bg-[var(--brand-600)]"></div><div>Technical Due Diligence</div></div>
+              <div class="flex items-center gap-3"><div class="w-2 h-2 rounded-full bg-[var(--brand-600)]"></div><div>Rapid Prototyping</div></div>
             </div>
           </div>
 
           <div class="card p-6">
             <h4 class="text-md font-semibold">Proof & Deliverables</h4>
             <ul class="mt-3 text-gray-700 space-y-2 text-sm">
-              <li>One-pager PDF: <a class="text-[var(--brand-600)] font-medium" <a href="/Sumit_Snapshot_Styled.pdf" download>Download one-pager (PDF)</a></li>
-              <li>Portfolio: <a class="text-[var(--brand-600)] font-medium" href="https://sumitkthakur.netlify.app" target="_blank">sumitkthakur.netlify.app</a></li>
-              <li>LinkedIn: <a class="text-[var(--brand-600)] font-medium" href="https://linkedin.com/in/sumitkthakur" target="_blank">linkedin.com/in/sumitkthakur</a></li>
+              <li>One-pager PDF (downloadable)</li>
+              <li>Portfolio: <a href="https://sumitkthakur.netlify.app" target="_blank" rel="noopener" class="text-[var(--brand-600)]">sumitkthakur.netlify.app</a></li>
+              <li>LinkedIn: <a href="https://linkedin.com/in/sumitkthakur" target="_blank" rel="noopener" class="text-[var(--brand-600)]">linkedin.com/in/sumitkthakur</a></li>
             </ul>
             <div class="mt-4">
               <a href="mailto:bksumit.thakur@gmail.com" class="w-full inline-block text-center px-4 py-2 bg-[var(--brand-600)] text-white rounded-lg">Request advisory</a>
@@ -173,18 +148,67 @@
         </aside>
       </section>
 
-      <!-- footer CTA -->
       <div class="mt-12 text-center">
-        <p class="text-sm text-gray-600">Want a customized one-pager for your portfolio or an employer-ready summary? <a href="mailto:bksumit.thakur@gmail.com" class="accent font-medium">Email me</a>.</p>
+        <p class="text-sm text-gray-600">Want a customized one-pager or employer-ready summary? <a href="mailto:bksumit.thakur@gmail.com" class="accent font-medium">Email me</a>.</p>
       </div>
     </div>
   </main>
 
-  <footer id="contact" class="bg-gray-50 border-t border-gray-100 py-10">
+  <footer class="bg-gray-50 border-t border-gray-100 py-10">
     <div class="max-w-6xl mx-auto px-6 text-center text-sm text-gray-600">
-      © 2025 Sumit Thakur · Built for VC & Innovation audiences · <a href="https://sumitkthakur.netlify.app" class="accent">Portfolio</a>
+      © 2025 Sumit Thakur · Built for VC & Innovation audiences
     </div>
   </footer>
 
+  <!-- Small JS: validate PDF path and show fallback if needed -->
+  <script>
+    (function(){
+      const primary = '/Sumit_Snapshot_Styled.pdf';
+      const fallback = '/assets/Sumit_Snapshot_Styled.pdf';
+      const downloadBtn = document.getElementById('downloadBtn');
+      const viewBtn = document.getElementById('viewBtn');
+      const status = document.getElementById('pdfStatus');
+
+      // Helper to test availability via HEAD (some hosts block HEAD; fallback to GET with range)
+      async function exists(url){
+        try{
+          const r = await fetch(url, { method: 'HEAD' });
+          if (r.ok) return true;
+          // some hosts return 405 for HEAD — try a small GET range request
+          const r2 = await fetch(url, { method: 'GET', headers: { 'Range': 'bytes=0-0' } });
+          return r2.ok && r2.headers.get('content-type') && r2.headers.get('content-type').includes('pdf');
+        }catch(e){
+          return false;
+        }
+      }
+
+      async function check(){
+        // primary
+        if (await exists(primary)){
+          downloadBtn.href = primary;
+          viewBtn.href = primary;
+          return;
+        }
+        // show status while trying fallback
+        status.style.display = 'inline';
+        // fallback
+        if (await exists(fallback)){
+          downloadBtn.href = fallback;
+          viewBtn.href = fallback;
+          status.style.display = 'none';
+          return;
+        }
+        // neither path found — disable buttons and show message
+        status.textContent = 'PDF not available on site. Upload Sumit_Snapshot_Styled.pdf to site root or /assets/ folder.';
+        downloadBtn.style.pointerEvents = 'none';
+        downloadBtn.style.opacity = '0.6';
+        viewBtn.style.pointerEvents = 'none';
+        viewBtn.style.opacity = '0.6';
+      }
+
+      // run check after DOM ready
+      document.addEventListener('DOMContentLoaded', check);
+    })();
+  </script>
 </body>
 </html>
